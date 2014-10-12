@@ -9,7 +9,7 @@ Run Application class, and point browser to http://localhost:8080/bookings. No p
 Notes:
 * Requires Java8
 * Note the format for specifying the profile on the command line:
-  * java -jar target/springboot-0.0.1-SNAPSHOT.jar *--spring.profiles.active=prod*
+  * java -jar target/springboot-0.0.1-SNAPSHOT.jar **--spring.profiles.active=prod**
   * Took me a while to figure this out. For example, neither of the following formats seems to work
   *  -Dspring.profiles.active="prod"
   *  -Drun.jvmArguments="-Dspring.profiles.active=prod"
