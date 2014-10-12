@@ -5,15 +5,17 @@ Most code taken from https://github.com/joshlong/boot-examples/tree/master/rest-
 
 Running demo:
 Run Application class, and point browser to http://localhost:8080/bookings. No pretty UI, just REST. Requires Java8.
+For example:
+'mvn package && java -jar target/springboot-0.0.1-SNAPSHOT.jar'
 
 Taking it further:
 By default, the app runs using an in-memory database (h2). To use for real i.e. with a database that will actual persist 
 your data between server runs, use the demo profile, which uses a mysql database instead:
 
-'java  -jar target/springboot-0.0.1-SNAPSHOT.jar --spring.profiles.active=demo'
+'java -jar target/springboot-0.0.1-SNAPSHOT.jar --spring.profiles.active=demo'
 
-However, you must first run this command from the command line:
-'mysql --user=root src/main/resources/setup.sql'
+However, you must first have mysql installed, create an empty demo schem, and run this command from the command line:
+'mysql --user=root demo < src/main/resources/setup.sql'
 
 Notes:
 * Note the format for specifying the profile on the command line:
