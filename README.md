@@ -6,10 +6,9 @@ Most code taken from https://github.com/joshlong/boot-examples/tree/master/rest-
 
 ###Running demo
 
-Run the Application class, and point browser to http://localhost:8080/bookings
+* From your IDE: Run the Application class (do mvn install first)
 
-For example:
-`mvn package && java -jar target/springboot-0.0.1-SNAPSHOT.jar`
+* From the command line: `mvn package && java -jar target/springboot-0.0.1-SNAPSHOT.jar`
 
 No pretty UI, just REST. Requires Java8.
 
