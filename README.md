@@ -1,9 +1,10 @@
 SpringBootMaven
 ===============
 Initial draft of a Spring Boot app, using JPA for persistence and Maven to build.
+
 Most code taken from https://github.com/joshlong/boot-examples/tree/master/rest-and-mvc
 
-###Running demo:
+###Running demo
 
 Run the Application class, and point browser to http://localhost:8080/bookings
 
@@ -23,7 +24,7 @@ However, you must first have mysql installed, create an empty demo schema, and r
 
 `mysql --user=root demo < src/main/resources/setup.sql`
 
-###Bacground Notes
+###Background Notes
 Note the format for specifying the profile on the command line:
 
 java -jar target/springboot-0.0.1-SNAPSHOT.jar **--spring.profiles.active=demo**
