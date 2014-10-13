@@ -3,13 +3,17 @@ SpringBootMaven
 Initial draft of a Spring Boot app, using JPA for persistence and Maven to build.
 Most code taken from https://github.com/joshlong/boot-examples/tree/master/rest-and-mvc
 
-Running demo:
+###Running demo:
+
 Run the Application class, and point browser to http://localhost:8080/bookings. 
+
 For example:
 'mvn package && java -jar target/springboot-0.0.1-SNAPSHOT.jar'
+
 No pretty UI, just REST. Requires Java8.
 
-Taking it further:
+###Running for real
+
 By default, the app runs using an in-memory database (h2). To use for real i.e. with a database that will actual persist 
 your data between server runs, use the demo profile, which uses a mysql database instead:
 
