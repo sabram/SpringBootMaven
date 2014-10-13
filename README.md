@@ -20,13 +20,14 @@ your data between server runs, use the demo profile, which uses a mysql database
 `java -jar target/springboot-0.0.1-SNAPSHOT.jar --spring.profiles.active=demo`
 
 However, you must first have mysql installed, create an empty demo schem, and run this command from the command line:
+
 `mysql --user=root demo < src/main/resources/setup.sql`
 
 Notes:
 Note the format for specifying the profile on the command line:
 `java -jar target/springboot-0.0.1-SNAPSHOT.jar **--spring.profiles.active=demo**`
-Took me a while to figure this out. For example, neither -Dspring.profiles.active="demo" nor  
--Drun.jvmArguments="-Dspring.profiles.active=demo" seemed to work.
+Took me a while to figure this out. For example, neither `-Dspring.profiles.active="demo"` nor  
+`-Drun.jvmArguments="-Dspring.profiles.active=demo"` seemed to work.
   
   
   
